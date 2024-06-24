@@ -34,7 +34,7 @@ public class ProdutoController {
 	
 	@PostMapping
 	@Operation(summary = "Rota responsável pelo cadastro de produtos") 
-    @ApiResponse(responseCode = "201",description = "usuário cadastrado com sucesso",content = {
+    @ApiResponse(responseCode = "201",description = "Produto cadastrado com sucesso",content = {
    		@Content(mediaType = "application.json",schema = @Schema(implementation = ResponseEntity.class))
     })       
 	public ResponseEntity<ProdutoDto>cadastrarProduto(@RequestBody @Valid ProdutoDto produto){
